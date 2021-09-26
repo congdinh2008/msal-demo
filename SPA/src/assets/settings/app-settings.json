@@ -1,0 +1,20 @@
+{
+  "appTitle": "FPT Software Academy",
+  "appVersion": "1",
+  "baseUrl": "https://localhost:44372",
+  "authenticatedRedirectUrl": "/docs",
+  "clientId": "fsa-ms",
+  "redirectToAzureAD": false,
+  "azureADSettings": {
+    "instance": "https://login.microsoftonline.com/",
+    "tenantId": "cd253f18-4b02-4f2f-b7b5-ac6ae67385d4",
+    "clientId": "d81001fb-9d29-4efd-a690-e7fcc71a676c",
+    "redirectUriPath": "/login",
+    "postLogoutRedirectUri": "/"
+  },
+  "resourceApi": {
+    "endpoint": "https://localhost:44372/api/todolist",
+    "scopes": ["api://0d821fff-39e2-4174-8237-c5167737b6ce/access_as_user"]
+  },
+  "loginType": ["azuread", "form", "another"]
+}

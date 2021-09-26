@@ -1,0 +1,40 @@
+<div class="card">
+	<div class="card-header">
+		<h5>Todo Management</h5>
+	</div>
+	<div class="card-body">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Status</th>
+					<th scope="col">Description</th>
+					<th scope="col">Owner</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let item of todos">
+					<td>{{item.status?'Completed':'Not yet'}}</td>
+					<td>{{item.description}}</td>
+					<td>{{item.owner}}</td>
+					<td>
+						<div class="table-action">
+							<button class="btn-icon" (click)="edit(item.id)">
+								Edit
+							</button>
+							<button class="btn-icon text-danger" (click)="delete(item.id)">
+								Delete
+							</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="card-footer">
+		<button class="btn btn-primary" (click)="add()">Add</button>
+	</div>
+</div>
+
+<app-todo-details *ngIf="showDetails" [id]="selectedId" (cancelForm)="onCancelDetails()" (saveForm)="onSaveDetails()">
+</app-todo-details>

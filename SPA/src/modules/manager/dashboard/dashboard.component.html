@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center">
+    <div class="card">
+        <div class="card-body" *ngIf="loginDisplay">
+            <h1>User is logged in</h1>
+        </div>
+        <div class="card-body" *ngIf="!loginDisplay">
+            <h1>User is not logged in</h1>
+        </div>
+    </div>
+</div>

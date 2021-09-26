@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/API/.vs/TodoList
+/API/Microsoft.Identity.Web.Future/bin/Debug/netcoreapp3.1
+/API/Microsoft.Identity.Web.Future/obj
+/API/TodoListAPI/bin/Debug/netcoreapp3.1
+/API/TodoListAPI/obj
+/API/TodoListAPI.Tests/bin/Debug/netcoreapp3.1
+/API/TodoListAPI.Tests/obj

@@ -1,0 +1,23 @@
+<div class="home-section">
+    <div class="card" *ngIf="!loginDisplay">
+        <h1>User is not logged in</h1>
+    </div>
+    <div class="card" *ngIf="loginDisplay">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Claim</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of dataSource">
+                        <td>{{item.claim}}</td>
+                        <td>{{item.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
