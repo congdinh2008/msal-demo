@@ -9,3 +9,4 @@
 /API/TodoListAPI/obj
 /API/TodoListAPI.Tests/bin/Debug/netcoreapp3.1
 /API/TodoListAPI.Tests/obj
+/SPA/node_modules
